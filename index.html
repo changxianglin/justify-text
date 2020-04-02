@@ -6,9 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Justify Text</title>
   <script src="https://unpkg.com/lodash@4.16.6"></script>
+
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-template-rows: 200px;
+    }
+
+    .box-1 {
+      line-height: 200px;
+      align-items: center;
+      background: lightcoral;
+      text-align: justify;
+    }
+    
+    .box-1::after {
+      display: inline-block;
+      content: '';
+      width: 100%;
+    }
+
+    .box-2 {
+      line-height: 200px;
+      background: lightseagreen;
+      text-align: justify;
+    }
+
+    .box-2::after {
+      display: inline-block;
+      content: '';
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
   <script src="./dist/bundle.js"></script>
+
+
+
+  <div class="wrapper">
+    <div class="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sit.</div>
+    <div class="box-2">Lorem, ipsum dolor.</div> 
+  </div>
 </body>
 </html>
