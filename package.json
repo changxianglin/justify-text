@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "xianglin <281532612@qq.com> (http://zhourong.host)",
   "license": "MIT",
   "devDependencies": {
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
